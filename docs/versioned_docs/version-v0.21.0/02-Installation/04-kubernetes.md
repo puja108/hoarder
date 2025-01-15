@@ -46,7 +46,15 @@ Learn more about the costs of using openai [here](/openai).
 
 </details>
 
-### 4. Deploy the service
+### 4. Build the deployment manifest
+
+Build the deployment manifest by running:
+
+```
+make build
+```
+
+### 5. Deploy the service
 
 Deploy the service by running:
 
@@ -54,7 +62,7 @@ Deploy the service by running:
 make deploy
 ```
 
-### 5. Access the service
+### 6. Access the service
 
 By default, these manifests expose the application as a LoadBalancer Service. You can run `kubectl get services` to identify the IP of the loadbalancer for your service.
 
@@ -62,7 +70,7 @@ Then visit `http://<loadbalancer-ip>:3000` and you should be greated with the Si
 
 > Note: Depending on your setup you might want to expose the service via an Ingress, or have a different means to access it.
 
-### [Optional] 6. Setup quick sharing extensions
+### [Optional] 7. Setup quick sharing extensions
 
 Go to the [quick sharing page](/quick-sharing) to install the mobile apps and the browser extensions. Those will help you hoard things faster!
 
